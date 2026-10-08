@@ -13,7 +13,7 @@
 
 ## Overview
 
-**YouTube Adung Commercial** is a standalone, local-first desktop application designed for digital creators, investigative storytellers, and media production teams. It unifies deep YouTube metadata discovery, automated long-form transcript extraction, competitor velocity analysis, and AI-assisted narrative script generation.
+**YouTube Adung Commercial** is a standalone, local-first desktop application designed for digital creators, investigative storytellers, and media production teams. It unifies deep YouTube metadata discovery, automated long-form transcript extraction, competitor velocity analysis, and AI-assisted original script development from research insights.
 
 - **Official Web Portal:** [https://adung.top](https://adung.top)
 - **Vietnamese Portal:** [https://adung.top/vi.html](https://adung.top/vi.html)
