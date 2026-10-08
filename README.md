@@ -34,25 +34,24 @@
 
 ## Anthropic Claude & Model Context Protocol (MCP)
 
-Adung adopts Anthropic's open-source **Model Context Protocol (MCP)** standard to bridge live YouTube intelligence into AI workflows:
+The separate [adung-mcp developer preview](https://github.com/AdungApp/adung-mcp) provides local stdio request handling and proposed tool schemas. Production adapters are not implemented: it does not fetch live YouTube data or connect to the desktop database. All four tools return explicit unavailable errors with no research data.
+
+Install the Python package separately following that repository's installation instructions; installing the desktop EXE alone is not sufficient. The following client configuration is illustrative; replace the Python path with the installed environment's absolute path. Claude Desktop / Claude Code integration has not been verified end-to-end.
 
 ```json
 {
   "mcpServers": {
     "adung-youtube": {
-      "command": "python",
-      "args": ["-m", "adung_mcp.server"],
-      "env": {
-        "ADUNG_PORT": "8000"
-      }
+      "command": "C:\\path\\to\\adung-mcp\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "adung_mcp.server"]
     }
   }
 }
 ```
 
-- **BYOK (Bring Your Own Key):** Users configure their own Claude API credentials locally.
-- **Privacy:** Analysis happens locally on the desktop; credentials never traverse intermediary cloud servers.
-- **Workflow Tools:** Exposes tools for transcript ingestion, narrative outline generation, and competitor keyword velocity to Claude.
+- **Transport:** Local stdin/stdout subprocess, not HTTP/SSE. No host/port configuration is used.
+- **Credentials:** The MCP preview requires no API key and performs no AI inference or network research.
+- **Preview interfaces:** `fetch_youtube_transcript`, `query_niche_velocity`, `extract_creator_dna`, and `develop_script_outline` are declared but not implemented. They return `isError: true` with `status: "not_implemented"`, not synthetic success data.
 
 ---
 
