@@ -59,7 +59,7 @@ Adung adopts Anthropic's open-source **Model Context Protocol (MCP)** standard t
 ## Releases & Downloads
 
 - **Direct Download (v1.2):** [Google Drive Official Mirror](https://drive.google.com/file/d/11K-27Hlk_PLbA05L8D087sjsTE-plGSR/view?usp=sharing)
-- **GitHub Release Binary:** [Setup_Youtube_Adung_Commercial_v1.2.exe (107 MB)](https://github.com/dugbim17-create/youtube-adung-download/releases/download/v1.2/Setup_Youtube_Adung_Commercial_v1.2.exe)
+- **GitHub Release Binary:** [Setup_Youtube_Adung_Commercial_v1.2.exe (107 MB)](https://github.com/AdungApp/youtube-adung/releases/download/v1.2/Setup_Youtube_Adung_Commercial_v1.2.exe)
 - **Package Size:** 107 MB (Bundled self-contained Windows runtime)
 
 ---
