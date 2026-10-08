@@ -41,9 +41,9 @@ Adung adopts Anthropic's open-source **Model Context Protocol (MCP)** standard t
   "mcpServers": {
     "adung-youtube": {
       "command": "python",
-      "args": ["-m", "app.mcp_server.server"],
+      "args": ["-m", "adung_mcp.server"],
       "env": {
-        "ADUNG_LOCAL_PORT": "8000"
+        "ADUNG_PORT": "8000"
       }
     }
   }
