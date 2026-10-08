@@ -1,0 +1,21 @@
+name: Sync Release Binary
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Asset from Source Release
+        run: |
+          curl -sL "https://github.com/dugbim17-create/youtube-adung-download/releases/download/v1.2/Setup_Youtube_Adung_Commercial_v1.2.exe" -o Setup_Youtube_Adung_Commercial_v1.2.exe
+          ls -lh Setup_Youtube_Adung_Commercial_v1.2.exe
+      - name: Upload to Release v1.2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload v1.2 Setup_Youtube_Adung_Commercial_v1.2.exe --clobber
