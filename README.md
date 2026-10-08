@@ -27,7 +27,7 @@
 
 1. **Deterministic Niche Discovery:** Pre-configured with 110 curated YouTube niche taxonomies (65 Faceless/AI + 45 Real-life Creator niches) with real-time Views-Per-Hour (VPH) velocity filters.
 2. **Deep Transcript Extraction:** Extracts complete timestamped spoken transcripts from long-form videos (4,000 to 18,000+ words) in seconds to dissect 3-act narrative arcs and retention drop-offs.
-3. **Anthropic Claude & MCP Integration:** Native integration with **Anthropic Claude** via API (BYOK) and developing **Model Context Protocol (MCP)** server architecture to empower Claude Desktop and Claude Code agents with live YouTube research data.
+3. **Anthropic Claude & MCP Integration:** Native integration with **Anthropic Claude** via API (BYOK) and developing **Model Context Protocol (MCP)** server architecture for future Claude-assisted creator research workflows.
 4. **Local-First Security:** All project metadata and transcripts are indexed locally in encrypted SQLite databases. Cryptographic license binding via Windows DPAPI ensures maximum privacy.
 
 ---
